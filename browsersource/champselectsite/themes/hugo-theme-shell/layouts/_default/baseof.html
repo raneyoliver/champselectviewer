@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <div id="content">
+            {{ $s := "" }}
+            {{ with .Site.GetPage .Site.Params.Terminal.description }}
+                <!-- replace the first  p tag with a br tag  -->
+                {{ $s = replaceRE "</?p[^>]*>" "" .Content 1 }}
+            {{ end }}
+            {{ if eq $s "" }}
+            {{ else }}
+                {{- block "main" . }}{{- end }}
+            {{ end }}
+        </div>
+        {{- partial "footer.html" . -}}
+
+        <!--  Additions start here -->
+        
+        {{ if .Site.Params.Navbar.use }}
+            {{- partial "navbar.html" . -}} 
+        {{ end }}
+        
+        <!-- Additions stop here --> 
+    </body>
+</html>

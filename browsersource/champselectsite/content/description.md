@@ -1,0 +1,5 @@
+IN CHAMP SELECT
+
+oliver1: PLATINUM I 14 LP
+WR: 49.8% (723 games)
+
