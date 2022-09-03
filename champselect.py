@@ -7,7 +7,7 @@ req_headers = {
     "Accept-Language": "en-US,en;q=0.9,es;q=0.8",
     "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
     "Origin": "https://developer.riotgames.com",
-    "X-Riot-Token": "RGAPI-01fb97bd-731d-4f83-85a6-da99fe519d04"
+    "X-Riot-Token": ""
 }
 
 file = "C:\\Users\\Oliver\\Documents\\PythonProjects\\champselect\\browsersource\\champselectsite\\content\\description.md"
